@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 18:56:06 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/14 18:56:11 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/15 15:23:25 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,12 +73,13 @@ void	printf_lst(t_data *data)
 	t_node	*lst;
 
 	lst = data->a->head;
+	ft_printf("---A---\n");
 	while (lst)
 	{
 		ft_printf("%d\n", lst->nbr);
 		lst = lst->next;
 	}
-	ft_printf("\n");
+	ft_printf("\n---B---\n");
 	lst = data->b->head;
 	while (lst)
 	{

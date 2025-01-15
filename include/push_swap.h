@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 18:43:34 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/14 20:08:07 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/15 16:12:45 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,27 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include "external.h"
+
+enum	e_loc
+{
+	TOP_A,
+	BOTTOM_A,
+	TOP_B,
+	BOTTOM_B
+};
+
+typedef struct	s_chunk
+{
+	enum e_loc	loc;
+	int			size;
+}	t_chunk;
+
+typedef struct	s_split
+{
+	t_chunk	max;
+	t_chunk	mid;
+	t_chunk	min;
+}	t_split;
 
 typedef struct s_node
 {
@@ -41,6 +62,13 @@ typedef struct s_data
 
 // ================================PUSH__SWAP===============================
 int		normalize_stack(t_stack *stack);
+void	sort(t_data *data);
+void	sort_chunk(t_data *data);
+void	split_chunk(t_data *data, t_chunk *to_sort, t_split *dest);
+int		move_from_to(t_data *data, enum e_loc from, enum e_loc to);
+t_node	*get_next_node(t_node *node, enum e_loc loc);
+t_node	*get_correct_node(t_data *data, enum e_loc loc);
+int		chunk_max_val(t_data *data, t_chunk *chunk);
 // =========================================================================
 
 // ================================OPERATIONS==============================

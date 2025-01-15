@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 18:49:40 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/14 18:51:33 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/15 16:45:05 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static void internal_rb(t_data *data, int print)
 	last->next = first;
 	first->prev = last;
 	if (print && !data->silent)
-		write(1, "ra\n", 3);
+		write(1, "rb\n", 3);
 }
 
 void	ra(t_data *data)

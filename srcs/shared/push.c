@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 18:52:49 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/14 18:53:14 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/15 15:24:26 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	pb(t_data *data)
 {
 	t_node	*temp;
 
-	if (!data || !data->a || data->a->head)
+	if (!data || !data->a || !data->a->head)
 		return ;
 	temp = data->a->head;
 	data->a->head = data->a->head->next;
@@ -40,7 +40,7 @@ void	pa(t_data *data)
 {
 	t_node	*temp;
 
-	if (!data || !data->b || data->b->head)
+	if (!data || !data->b || !data->b->head)
 		return ;
 	temp = data->b->head;
 	data->b->head = data->b->head->next;
