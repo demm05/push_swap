@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 18:43:34 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/15 16:12:45 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/15 17:22:51 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,9 @@ int		move_from_to(t_data *data, enum e_loc from, enum e_loc to);
 t_node	*get_next_node(t_node *node, enum e_loc loc);
 t_node	*get_correct_node(t_data *data, enum e_loc loc);
 int		chunk_max_val(t_data *data, t_chunk *chunk);
+void	sort_three(t_data *data, t_chunk *to_sort);
+void	sort_two(t_data *data, t_chunk *to_sort);
+void	sort_one(t_data *data, t_chunk *to_sort);
 // =========================================================================
 
 // ================================OPERATIONS==============================
