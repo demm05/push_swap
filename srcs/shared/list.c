@@ -68,18 +68,18 @@ int	ft_lstsize(t_node *lst)
 	return (i);
 }
 
-void	printf_lst(t_stack *stack)
+void	printf_lst(t_data *data)
 {
 	t_node	*lst;
 
-	lst = stack->a;
+	lst = data->a->head;
 	while (lst)
 	{
 		ft_printf("%d\n", lst->nbr);
 		lst = lst->next;
 	}
 	ft_printf("\n");
-	lst = stack->b;
+	lst = data->b->head;
 	while (lst)
 	{
 		ft_printf("%d\n", lst->nbr);

@@ -12,18 +12,23 @@
 
 #include "../../include/push_swap.h"
 
+
+
 int	main(int argc, char *argv[])
 {
-	t_stack	*stack;
+	t_data	*data;
 
-	stack = init_stack(argc, argv);
-	normalize_stack(stack);
-	stack->silent = 0;
-	if (!stack)
+	data = init_data(argc, argv);
+	normalize_stack(data->a);
+	data->silent = false;
+	if (!data->a)
 		return (1);
 	//sort_stack(stack);
 	//printf_lst(stack);
-	clean_list(&stack->a);
-	clean_list(&stack->b);
-	free(stack);
+	ft_printf("%d %d\n", data->a->head->nbr, data->a->size);
+	clean_list(&data->a->head);
+	clean_list(&data->b->head);
+	free(data->a);
+	free(data->b);
+	free(data);
 }

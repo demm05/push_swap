@@ -85,9 +85,9 @@ int	normalize_stack(t_stack *stack)
 	t_node	*cur;
 	int		i;
 
-	sorted = ft_lstcpy(stack->a);
+	sorted = ft_lstcpy(stack->head);
 	sorted = merge_sort(sorted);
-	cur = stack->a;
+	cur = stack->head;
 	while (cur)
 	{
 		i = get_index(sorted, cur->nbr);

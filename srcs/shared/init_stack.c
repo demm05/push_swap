@@ -12,20 +12,43 @@
 
 #include "../../include/push_swap.h"
 
-t_stack	*init_stack(int argc, char *argv[])
+static void	fill_values(t_data *data)
 {
-	t_stack	*stack;
+	t_node	*cur;
+	int		i;
 
-	stack = malloc(sizeof(t_stack));
-	if (!stack)
-		return (NULL);
-	stack->a = parse_argv(argc, argv);
-	if (!stack->a)
+	cur = data->a->head;
+	i = 1;
+	while (cur->next)
 	{
-		clean_list(&stack->a);
-		free(stack);
+		cur = cur->next;
+		i++;
+	}
+	data->a->tail = cur;
+	data->a->size = i;
+	data->b->size = 0;
+	data->b->head = NULL;
+	data->b->tail = NULL;
+}
+
+t_data	*init_data(int argc, char *argv[])
+{
+	t_data	*data;
+
+	data = malloc(sizeof(t_data));
+	if (!data)
+		return (NULL);
+	data->a = malloc(sizeof(t_stack));
+	data->b = malloc(sizeof(t_stack));
+	// TODO: panic free
+	if (!data->a || !data->b)
+		return (NULL);
+	data->a->head = parse_argv(argc, argv);
+	if (!data->a->head)
+	{
+		free(data);
 		return (NULL);
 	}
-	stack->a_len = ft_lstsize(stack->a);
-	return (stack);
+	fill_values(data);
+	return (data);
 }

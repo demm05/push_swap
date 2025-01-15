@@ -27,33 +27,40 @@ typedef struct s_node
 
 typedef struct s_stack
 {
-	t_node	*a;
-	t_node	*b;
-	int		a_len;
-	int		b_len;
-	bool	silent;	
+	t_node	*head;
+	t_node	*tail;
+	int		size;
 }	t_stack;
+
+typedef struct s_data
+{
+	t_stack	*a;
+	t_stack	*b;
+	bool	silent;	
+}	t_data;
 
 // ================================PUSH__SWAP===============================
 int		normalize_stack(t_stack *stack);
 // =========================================================================
 
 // ================================OPERATIONS==============================
-void	sa(t_stack *stack);
-void	sb(t_stack *stack);
-void	ss(t_stack *stack);
-void	pa(t_stack *stack);
-void	pb(t_stack *stack);
-void	ra(t_stack *stack);
-void	rb(t_stack *stack);
-void	rra(t_stack *stack);
-void	rrb(t_stack *stack);
+void	sa(t_data *data);
+void	sb(t_data *data);
+void	ss(t_data *data);
+void	pa(t_data *data);
+void	pb(t_data *data);
+void	ra(t_data *data);
+void	rb(t_data *data);
+void	rr(t_data *data);
+void	rra(t_data *data);
+void	rrb(t_data *data);
+void	rrr(t_data *data);
 // =========================================================================
 
 // ==================================SHARED=================================
 t_node	*parse_argv(int argc, char *argv[]);
-t_stack	*init_stack(int argc, char *argv[]);
-void	printf_lst(t_stack *stack);
+t_data	*init_data(int argc, char *argv[]);
+void	printf_lst(t_data *data);
 // =========================================================================
 
 // ===================================LIST==================================

@@ -12,60 +12,64 @@
 
 #include "../../include/push_swap.h"
 
-static void	internal_sa(t_stack *stack, int print)
+static void	internal_sa(t_data *data, int print)
 {
-	t_node	*temp;
-	t_node	*next;
+	t_node	*first;
+	t_node	*second;
 
-	if (!stack->a || !stack->a->next)
+	if (!data || !data->a || ! data->a->head || !data->a->head->next)
 		return ;
-	temp = stack->a;
-	stack->a = stack->a->next;
-	next = stack->a->next;
-	stack->a->next = temp;
-	stack->a->prev = NULL;
-	temp->next = next;
-	if (next)
-		next->prev = temp;
-	temp->prev = stack->a;
-	if (!stack->silent && print)
+	first = data->a->head;
+	second = first->next;
+	data->a->head = second;
+	first->next = second->next;
+	if (second->next)
+		second->next->prev = first;
+	else
+		data->a->tail = first;
+	second->prev = NULL;
+	second->next = first;
+	first->prev = second;
+	if (!data->silent && print)
 		write(1, "sa\n", 3);
 }
 
-static void	internal_sb(t_stack *stack, int print)
+static void	internal_sb(t_data *data, int print)
 {
-	t_node	*temp;
-	t_node	*next;
+	t_node	*first;
+	t_node	*second;
 
-	if (!stack->b || !stack->b->next)
+	if (!data || !data->b || ! data->b->head || !data->b->head->next)
 		return ;
-	temp = stack->b;
-	stack->b = stack->b->next;
-	next = stack->b->next;
-	stack->b->next = temp;
-	stack->b->prev = NULL;
-	temp->next = next;
-	if (next)
-		next->prev = temp;
-	temp->prev = stack->b;
-	if (!stack->silent && print)
-		write(1, "sb\n", 3);
+	first = data->b->head;
+	second = first->next;
+	data->b->head = second;
+	first->next = second->next;
+	if (second->next)
+		second->next->prev = first;
+	else
+		data->b->tail = first;
+	second->prev = NULL;
+	second->next = first;
+	first->prev = second;
+	if (!data->silent && print)
+		write(1, "sa\n", 3);
 }
 
-void	sa(t_stack *stack)
+void	sa(t_data *data)
 {
-	internal_sa(stack, 1);
+	internal_sa(data, 1);
 }
 
-void	sb(t_stack *stack)
+void	sb(t_data *data)
 {
-	internal_sb(stack, 1);
+	internal_sb(data, 1);
 }
 
-void	ss(t_stack *stack)
+void	ss(t_data *data)
 {
-	internal_sa(stack, 0);
-	internal_sb(stack, 0);
-	if (!stack->silent)
+	internal_sa(data, 0);
+	internal_sb(data, 0);
+	if (!data->silent)
 		write(1, "ss\n", 3);
 }

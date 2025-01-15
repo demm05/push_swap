@@ -12,60 +12,58 @@
 
 #include "../../include/push_swap.h"
 
-static void	internal_ra(t_stack *stack, int print)
+static void internal_ra(t_data *data, int print)
 {
-	t_node	*last;
 	t_node	*first;
+	t_node	*last;
 
-	if (!stack->a || !stack->a->next)
+	if (!data || !data->a || !data->a->head || !data->a->head->next)
 		return ;
-	first = stack->a;
-	last = stack->a;
-	while (last->next)
-		last = last->next;
-	stack->a = first->next;
-	stack->a->prev = NULL;
+	first = data->a->head;
+	last = data->a->tail;
+	data->a->head = first->next;
+	data->a->tail = first;
+	data->a->head->prev = NULL;
+	first->next = NULL;
 	last->next = first;
 	first->prev = last;
-	first->next = NULL;
-	if (print && !stack->silent)
+	if (print && !data->silent)
 		write(1, "ra\n", 3);
 }
 
-static void	internal_rb(t_stack *stack, int print)
+static void internal_rb(t_data *data, int print)
 {
-	t_node	*last;
 	t_node	*first;
+	t_node	*last;
 
-	if (!stack->b || !stack->b->next)
+	if (!data || !data->b || !data->b->head || !data->b->head->next)
 		return ;
-	first = stack->b;
-	last = stack->b;
-	while (last->next)
-		last = last->next;
-	stack->b = first->next;
-	stack->b->prev = NULL;
+	first = data->b->head;
+	last = data->b->tail;
+	data->b->head = first->next;
+	data->b->tail = first;
+	data->b->head->prev = NULL;
+	first->next = NULL;
 	last->next = first;
 	first->prev = last;
-	first->next = NULL;
-	if (print && !stack->silent)
-		write(1, "rb\n", 3);
+	if (print && !data->silent)
+		write(1, "ra\n", 3);
 }
 
-void	ra(t_stack *stack)
+void	ra(t_data *data)
 {
-	internal_ra(stack, 1);
+	internal_ra(data, 1);
 }
 
-void	rb(t_stack *stack)
+void	rb(t_data *data)
 {
-	internal_rb(stack, 1);
+	internal_rb(data, 1);
 }
 
-void	rr(t_stack *stack)
+void	rr(t_data *data)
 {
-	internal_ra(stack, 1);
-	internal_rb(stack, 1);
-	if (!stack->silent)
+	internal_ra(data, 0);
+	internal_rb(data, 0);
+	if (!data->silent)
 		write(1, "rr\n", 3);
 }

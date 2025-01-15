@@ -12,42 +12,50 @@
 
 #include "../../include/push_swap.h"
 
-void	pb(t_stack *stack)
+void	pb(t_data *data)
 {
 	t_node	*temp;
 
-	if (!stack->a)
+	if (!data || !data->a || data->a->head)
 		return ;
-	temp = stack->a;
-	stack->a = stack->a->next;
-	if (stack->a)
-		stack->a->prev = NULL;
-	if (stack->b)
-		stack->b->prev = temp;
-	temp->next = stack->b;
-	stack->b = temp;
-	stack->a_len--;
-	stack->b_len++;
-	if (!stack->silent)
+	temp = data->a->head;
+	data->a->head = data->a->head->next;
+	if (data->a->head)
+		data->a->head->prev = NULL;
+	else
+		data->a->tail = NULL;
+	data->a->size--;
+	temp->next = data->b->head;
+	if (data->b->head)
+		data->b->head->prev = temp;
+	else
+		data->b->tail = temp;
+	data->b->head = temp;
+	data->b->size++;
+	if (!data->silent)
 		write(1, "pb\n", 3);
 }
 
-void	pa(t_stack *stack)
+void	pa(t_data *data)
 {
 	t_node	*temp;
 
-	if (!stack->b)
+	if (!data || !data->b || data->b->head)
 		return ;
-	temp = stack->b;
-	stack->b = temp->next;
-	if (stack->b)
-		stack->b->prev = NULL;
-	if (stack->a)
-		stack->a->prev = temp;
-	temp->next = stack->a;
-	stack->a = temp;
-	stack->a_len++;
-	stack->b_len--;
-	if (!stack->silent)
+	temp = data->b->head;
+	data->b->head = data->b->head->next;
+	if (data->b->head)
+		data->b->head->prev = NULL;
+	else
+		data->b->tail = NULL;
+	data->b->size--;
+	temp->next = data->a->head;
+	if (data->a->head)
+		data->a->head->prev = temp;
+	else
+		data->a->tail = temp;
+	data->a->head = temp;
+	data->a->size++;
+	if (!data->silent)
 		write(1, "pa\n", 3);
 }
