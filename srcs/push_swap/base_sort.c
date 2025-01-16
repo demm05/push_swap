@@ -94,9 +94,10 @@ static void	base_sort_five_a(t_data *data)
 		else
 			ra(data);
 	}
-	if (is_sorted(data))
-		return ;
-	base_sort_three_a(data);
+	if (!is_sorted(data))
+		base_sort_three_a(data);
+	if (data->b->head->nbr == 0)
+		sb(data);
 	pa(data);
 	pa(data);
 }

@@ -10,24 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/push_swap.h"
+#include "push_swap.h"
 
 int	main(int argc, char *argv[])
 {
 	t_data	*data;
 
-	if (argc < 3)
+	if (argc < 2)
 		return (0);
 	data = init_data(argc, argv);
-	if (!data->a)
+	if (!data)
 		return (1);
 	normalize_stack(data->a);
 	data->silent = false;
 	if (!is_sorted(data))
 		sort(data);
-	clean_list(&data->a->head);
-	clean_list(&data->b->head);
-	free(data->a);
-	free(data->b);
-	free(data);
+	free_data(data);
 }

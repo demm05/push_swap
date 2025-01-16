@@ -16,7 +16,8 @@
 # include <stdbool.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include "external.h"
+# include "libft.h"
+# include "ft_printf.h"
 
 enum	e_loc
 {
@@ -93,6 +94,7 @@ t_node	*parse_argv(int argc, char *argv[]);
 t_data	*init_data(int argc, char *argv[]);
 void	printf_lst(t_data *data);
 bool	is_sorted(t_data *data);
+void	free_data(t_data *data);
 // =========================================================================
 
 // ===================================LIST==================================

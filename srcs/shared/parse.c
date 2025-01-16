@@ -6,14 +6,14 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 18:53:47 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/14 19:09:01 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/16 13:32:31 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/push_swap.h"
 #include <limits.h>
 
-static inline long	ft_atoi(const char *nptr)
+static long	ps_atoi(const char *nptr)
 {
 	long	result;
 	int		sign;
@@ -79,21 +79,21 @@ static int	parse_str(char *str, t_node **lst)
 	long	num;
 	int		i;
 
-	num = ft_atoi(str);
+	num = ps_atoi(str);
 	if (num > INT_MAX || num < INT_MIN)
 	{
-		ft_printf("Size of number exceed size of integer type\n");
+		write(2, "Error\n", 6);
 		return (-1);
 	}
 	if (check_for_duplicate(*lst, num))
 	{
-		ft_printf("Duplicate of numbers\n");
+		write(2, "Error\n", 6);
 		return (-1);
 	}
 	i = get_i_of_next_num(str);
 	if (i == -1)
 	{
-		ft_printf("Only numbers\n");
+		write(2, "Error\n", 6);
 		return (-1);
 	}
 	append_list(lst, num);

@@ -11,3 +11,18 @@
 /* ************************************************************************** */
 
 #include "../../include/push_swap.h"
+
+void	free_data(t_data *data)
+{
+	if (data->a)
+	{
+		clean_list(&data->a->head);
+		free(data->a);
+	}
+	if (data->b)
+	{
+		clean_list(&data->b->head);
+		free(data->b);
+	}
+	free(data);
+}

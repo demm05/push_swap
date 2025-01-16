@@ -90,9 +90,6 @@ int	normalize_stack(t_stack *stack)
 	while (cur)
 	{
 		i = get_index(sorted, cur->nbr);
-		// TODO: Emergency free
-		if (i == -1)
-			break ;
 		cur->nbr = i;
 		cur = cur->next;
 	}

@@ -40,9 +40,11 @@ t_data	*init_data(int argc, char *argv[])
 		return (NULL);
 	data->a = malloc(sizeof(t_stack));
 	data->b = malloc(sizeof(t_stack));
-	// TODO: panic free
 	if (!data->a || !data->b)
+	{
+		free_data(data);
 		return (NULL);
+	}
 	data->a->head = parse_argv(argc, argv);
 	if (!data->a->head)
 	{

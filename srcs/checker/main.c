@@ -10,9 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/push_swap.h"
+#include "push_swap.h"
 
 int	main(int argc, char *argv[])
 {
-	return (0);
+	t_data	*data;
+
+	if (argc < 2)
+		return (0);
+	data = init_data(argc, argv);
+	if (!data)
+		return (1);
+	normalize_stack(data->a);
+	data->silent = true;
+	free_data(data);
 }
+

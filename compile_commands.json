@@ -1,0 +1,369 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "objs/ft_parsers.o",
+      "srcs/ft_parsers.c"
+    ],
+    "directory": "/home/dmytro/push_swap/printf",
+    "file": "/home/dmytro/push_swap/printf/srcs/ft_parsers.c",
+    "output": "/home/dmytro/push_swap/printf/objs/ft_parsers.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "objs/ft_printf.o",
+      "srcs/ft_printf.c"
+    ],
+    "directory": "/home/dmytro/push_swap/printf",
+    "file": "/home/dmytro/push_swap/printf/srcs/ft_printf.c",
+    "output": "/home/dmytro/push_swap/printf/objs/ft_printf.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "objs/ft_printf_utils.o",
+      "srcs/ft_printf_utils.c"
+    ],
+    "directory": "/home/dmytro/push_swap/printf",
+    "file": "/home/dmytro/push_swap/printf/srcs/ft_printf_utils.c",
+    "output": "/home/dmytro/push_swap/printf/objs/ft_printf_utils.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "objs/libft.o",
+      "srcs/libft.c"
+    ],
+    "directory": "/home/dmytro/push_swap/printf",
+    "file": "/home/dmytro/push_swap/printf/srcs/libft.c",
+    "output": "/home/dmytro/push_swap/printf/objs/libft.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "objs/parse_specifier.o",
+      "srcs/parse_specifier.c"
+    ],
+    "directory": "/home/dmytro/push_swap/printf",
+    "file": "/home/dmytro/push_swap/printf/srcs/parse_specifier.c",
+    "output": "/home/dmytro/push_swap/printf/objs/parse_specifier.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "objs/pf_char.o",
+      "srcs/pf_char.c"
+    ],
+    "directory": "/home/dmytro/push_swap/printf",
+    "file": "/home/dmytro/push_swap/printf/srcs/pf_char.c",
+    "output": "/home/dmytro/push_swap/printf/objs/pf_char.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "objs/pf_hex.o",
+      "srcs/pf_hex.c"
+    ],
+    "directory": "/home/dmytro/push_swap/printf",
+    "file": "/home/dmytro/push_swap/printf/srcs/pf_hex.c",
+    "output": "/home/dmytro/push_swap/printf/objs/pf_hex.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "objs/pf_integer.o",
+      "srcs/pf_integer.c"
+    ],
+    "directory": "/home/dmytro/push_swap/printf",
+    "file": "/home/dmytro/push_swap/printf/srcs/pf_integer.c",
+    "output": "/home/dmytro/push_swap/printf/objs/pf_integer.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "objs/pf_pointer.o",
+      "srcs/pf_pointer.c"
+    ],
+    "directory": "/home/dmytro/push_swap/printf",
+    "file": "/home/dmytro/push_swap/printf/srcs/pf_pointer.c",
+    "output": "/home/dmytro/push_swap/printf/objs/pf_pointer.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "objs/pf_string.o",
+      "srcs/pf_string.c"
+    ],
+    "directory": "/home/dmytro/push_swap/printf",
+    "file": "/home/dmytro/push_swap/printf/srcs/pf_string.c",
+    "output": "/home/dmytro/push_swap/printf/objs/pf_string.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "./include",
+      "-c",
+      "-o",
+      "objs/pf_unsigned.o",
+      "srcs/pf_unsigned.c"
+    ],
+    "directory": "/home/dmytro/push_swap/printf",
+    "file": "/home/dmytro/push_swap/printf/srcs/pf_unsigned.c",
+    "output": "/home/dmytro/push_swap/printf/objs/pf_unsigned.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-Iprintf/include",
+      "-c",
+      "-o",
+      "objs/shared/init_stack.o",
+      "srcs/shared/init_stack.c"
+    ],
+    "directory": "/home/dmytro/push_swap",
+    "file": "/home/dmytro/push_swap/srcs/shared/init_stack.c",
+    "output": "/home/dmytro/push_swap/objs/shared/init_stack.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-Iprintf/include",
+      "-c",
+      "-o",
+      "objs/shared/list.o",
+      "srcs/shared/list.c"
+    ],
+    "directory": "/home/dmytro/push_swap",
+    "file": "/home/dmytro/push_swap/srcs/shared/list.c",
+    "output": "/home/dmytro/push_swap/objs/shared/list.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-Iprintf/include",
+      "-c",
+      "-o",
+      "objs/shared/panic.o",
+      "srcs/shared/panic.c"
+    ],
+    "directory": "/home/dmytro/push_swap",
+    "file": "/home/dmytro/push_swap/srcs/shared/panic.c",
+    "output": "/home/dmytro/push_swap/objs/shared/panic.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-Iprintf/include",
+      "-c",
+      "-o",
+      "objs/shared/parse.o",
+      "srcs/shared/parse.c"
+    ],
+    "directory": "/home/dmytro/push_swap",
+    "file": "/home/dmytro/push_swap/srcs/shared/parse.c",
+    "output": "/home/dmytro/push_swap/objs/shared/parse.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-Iprintf/include",
+      "-c",
+      "-o",
+      "objs/shared/push.o",
+      "srcs/shared/push.c"
+    ],
+    "directory": "/home/dmytro/push_swap",
+    "file": "/home/dmytro/push_swap/srcs/shared/push.c",
+    "output": "/home/dmytro/push_swap/objs/shared/push.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-Iprintf/include",
+      "-c",
+      "-o",
+      "objs/shared/rotate.o",
+      "srcs/shared/rotate.c"
+    ],
+    "directory": "/home/dmytro/push_swap",
+    "file": "/home/dmytro/push_swap/srcs/shared/rotate.c",
+    "output": "/home/dmytro/push_swap/objs/shared/rotate.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-Iprintf/include",
+      "-c",
+      "-o",
+      "objs/shared/rrotate.o",
+      "srcs/shared/rrotate.c"
+    ],
+    "directory": "/home/dmytro/push_swap",
+    "file": "/home/dmytro/push_swap/srcs/shared/rrotate.c",
+    "output": "/home/dmytro/push_swap/objs/shared/rrotate.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-Iprintf/include",
+      "-c",
+      "-o",
+      "objs/shared/swap.o",
+      "srcs/shared/swap.c"
+    ],
+    "directory": "/home/dmytro/push_swap",
+    "file": "/home/dmytro/push_swap/srcs/shared/swap.c",
+    "output": "/home/dmytro/push_swap/objs/shared/swap.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-Iprintf/include",
+      "-c",
+      "-o",
+      "objs/push_swap/main.o",
+      "srcs/push_swap/main.c"
+    ],
+    "directory": "/home/dmytro/push_swap",
+    "file": "/home/dmytro/push_swap/srcs/push_swap/main.c",
+    "output": "/home/dmytro/push_swap/objs/push_swap/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iinclude",
+      "-Iprintf/include",
+      "-c",
+      "-o",
+      "objs/push_swap/normalize.o",
+      "srcs/push_swap/normalize.c"
+    ],
+    "directory": "/home/dmytro/push_swap",
+    "file": "/home/dmytro/push_swap/srcs/push_swap/normalize.c",
+    "output": "/home/dmytro/push_swap/objs/push_swap/normalize.o"
+  }
+]
