@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 15:00:34 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/15 18:26:07 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/16 13:24:44 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	sort_three_bottom_b(t_data *data, t_chunk *to_sort, int max);
 void	sort_three(t_data *data, t_chunk *to_sort)
 {
 	enum e_loc	loc;
-	int	max;
+	int			max;
 
 	max = chunk_max_val(data, to_sort);
 	loc = to_sort->loc;
@@ -48,7 +48,7 @@ void	sort_three_top_a(t_data *data, t_chunk *to_sort, int max)
 		ra(data);
 		sa(data);
 		rra(data);
-	} 
+	}
 	to_sort->loc = TOP_A;
 	to_sort->size -= 1;
 	sort_two(data, to_sort);
@@ -57,13 +57,13 @@ void	sort_three_top_a(t_data *data, t_chunk *to_sort, int max)
 void	sort_three_top_b(t_data *data, t_chunk *to_sort, int max)
 {
 	pa(data);
-	if (data->a->head->next->next->nbr == max)
+	if (data->b->head->next->nbr == max)
 	{
 		sb(data);
 		pa(data);
 		sa(data);
 	}
-	if (data->a->head->next->nbr == max)
+	else if (data->b->head->nbr == max)
 	{
 		pa(data);
 		sa(data);
@@ -110,14 +110,14 @@ void	sort_three_bottom_b(t_data *data, t_chunk *to_sort, int max)
 	}
 	else
 	{
-		if (data->a->head->next->nbr == max)
+		if (data->b->head->next->nbr == max)
 			sb(data);
 		pa(data);
 		pa(data);
 		rrb(data);
-
 	}
 	pa(data);
+	to_sort->loc = TOP_A;
 	to_sort->size -= 1;
 	sort_two(data, to_sort);
 }

@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 20:07:50 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/14 20:07:54 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/16 13:24:06 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,6 @@ static t_node	*merge(t_node *left, t_node *right)
 		return (right);
 	if (!right)
 		return (left);
-
 	if (left->nbr < right->nbr)
 	{
 		left->next = merge(left->next, right);
@@ -69,7 +68,7 @@ static int	get_index(t_node *lst, int nbr)
 	int	i;
 
 	i = 0;
-	while(lst)
+	while (lst)
 	{
 		if (lst->nbr == nbr)
 			return (i);
@@ -93,7 +92,7 @@ int	normalize_stack(t_stack *stack)
 		i = get_index(sorted, cur->nbr);
 		// TODO: Emergency free
 		if (i == -1)
-			break;
+			break ;
 		cur->nbr = i;
 		cur = cur->next;
 	}

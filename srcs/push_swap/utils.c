@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 15:00:50 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/15 16:03:28 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/16 13:24:16 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ t_node	*get_correct_node(t_data *data, enum e_loc loc)
 	return (NULL);
 }
 
-int		chunk_max_val(t_data *data, t_chunk *chunk)
+int	chunk_max_val(t_data *data, t_chunk *chunk)
 {
 	t_node	*cur;
 	int		max;

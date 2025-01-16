@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 14:59:49 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/15 16:45:29 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/16 13:21:22 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,7 @@ void	move_bottom_a(t_data *data, enum e_loc to)
 		rb(data);
 	}
 }
+
 void	move_bottom_b(t_data *data, enum e_loc to)
 {
 	if (to == TOP_B)

@@ -6,13 +6,13 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 18:49:40 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/15 16:45:05 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/16 13:25:12 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/push_swap.h"
 
-static void internal_ra(t_data *data, int print)
+static void	internal_ra(t_data *data, int print)
 {
 	t_node	*first;
 	t_node	*last;
@@ -31,7 +31,7 @@ static void internal_ra(t_data *data, int print)
 		write(1, "ra\n", 3);
 }
 
-static void internal_rb(t_data *data, int print)
+static void	internal_rb(t_data *data, int print)
 {
 	t_node	*first;
 	t_node	*last;

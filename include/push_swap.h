@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 18:43:34 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/15 17:22:51 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/16 13:25:36 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,13 @@ enum	e_loc
 	BOTTOM_B
 };
 
-typedef struct	s_chunk
+typedef struct s_chunk
 {
 	enum e_loc	loc;
 	int			size;
 }	t_chunk;
 
-typedef struct	s_split
+typedef struct s_split
 {
 	t_chunk	max;
 	t_chunk	mid;
@@ -63,7 +63,7 @@ typedef struct s_data
 // ================================PUSH__SWAP===============================
 int		normalize_stack(t_stack *stack);
 void	sort(t_data *data);
-void	sort_chunk(t_data *data);
+void	base_sort_a(t_data *data);
 void	split_chunk(t_data *data, t_chunk *to_sort, t_split *dest);
 int		move_from_to(t_data *data, enum e_loc from, enum e_loc to);
 t_node	*get_next_node(t_node *node, enum e_loc loc);
@@ -92,6 +92,7 @@ void	rrr(t_data *data);
 t_node	*parse_argv(int argc, char *argv[]);
 t_data	*init_data(int argc, char *argv[]);
 void	printf_lst(t_data *data);
+bool	is_sorted(t_data *data);
 // =========================================================================
 
 // ===================================LIST==================================

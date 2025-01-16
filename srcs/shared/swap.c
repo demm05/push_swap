@@ -53,7 +53,7 @@ static void	internal_sb(t_data *data, int print)
 	second->next = first;
 	first->prev = second;
 	if (!data->silent && print)
-		write(1, "sa\n", 3);
+		write(1, "sb\n", 3);
 }
 
 void	sa(t_data *data)
