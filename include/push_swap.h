@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 18:43:34 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/16 13:25:36 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/17 14:57:29 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ void	rrr(t_data *data);
 // =========================================================================
 
 // ==================================SHARED=================================
-t_node	*parse_argv(int argc, char *argv[]);
+int		parse_argv(int argc, char *argv[], t_stack *stack);
 t_data	*init_data(int argc, char *argv[]);
 void	printf_lst(t_data *data);
 bool	is_sorted(t_data *data);

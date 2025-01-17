@@ -6,7 +6,7 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 19:04:00 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/14 19:08:54 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/17 15:08:27 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ static void	fill_values(t_data *data)
 	t_node	*cur;
 	int		i;
 
+	if (!data->a->head)
+		return ;
 	cur = data->a->head;
 	i = 1;
 	while (cur->next)
@@ -34,6 +36,7 @@ static void	fill_values(t_data *data)
 t_data	*init_data(int argc, char *argv[])
 {
 	t_data	*data;
+	int		status;
 
 	data = malloc(sizeof(t_data));
 	if (!data)
@@ -45,12 +48,14 @@ t_data	*init_data(int argc, char *argv[])
 		free_data(data);
 		return (NULL);
 	}
-	data->a->head = parse_argv(argc, argv);
-	if (!data->a->head)
+	status = parse_argv(argc, argv, data->a);
+	fill_values(data);
+	if (!data->a->head || status == EXIT_FAILURE || data->a->size < argc - 1)
 	{
-		free(data);
+		if (status == EXIT_FAILURE || data->a->size < argc - 1)
+			write(2, "Error\n", 6);
+		free_data(data);
 		return (NULL);
 	}
-	fill_values(data);
 	return (data);
 }

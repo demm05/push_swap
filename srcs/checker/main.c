@@ -103,7 +103,7 @@ int	main(int argc, char *argv[])
 			write(1, "KO\n", 3);
 	}
 	else
-		write(1, "Error\n", 6);
+		write(2, "Error\n", 6);
 	free_data(data);
 	return (0);
 }

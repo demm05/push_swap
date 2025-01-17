@@ -6,12 +6,14 @@
 /*   By: dmelnyk <dmelnyk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 18:53:47 by dmelnyk           #+#    #+#             */
-/*   Updated: 2025/01/16 13:32:31 by dmelnyk          ###   ########.fr       */
+/*   Updated: 2025/01/17 15:02:35 by dmelnyk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/push_swap.h"
 #include <limits.h>
+
+// 4 7 16 20 23 26 31 32 33
 
 static long	ps_atoi(const char *nptr)
 {
@@ -36,18 +38,14 @@ static long	ps_atoi(const char *nptr)
 
 static int	get_i_of_next_num(char	*str)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] == '+' || str[i] == '-')
-		{
-			while (str[++i])
-				if (str[i] == '-' || str[i] == '+')
-					return (-1);
-		}
-		else if (str[i] >= '0' && str[i] <= '9')
+		if ((str[i] == '+' || str[i] == '-') && !ft_isdigit(str[++i]))
+			return (-1);
+		if (ft_isdigit(str[i]))
 			i++;
 		else if (str[i] == ' ')
 		{
@@ -58,6 +56,8 @@ static int	get_i_of_next_num(char	*str)
 			return (-1);
 		}
 		else
+			return (-1);
+		if (ft_isdigit(str[i - 1]) && (str[i] == '-' || str[i] == '+'))
 			return (-1);
 	}
 	return (i);
@@ -81,48 +81,37 @@ static int	parse_str(char *str, t_node **lst)
 
 	num = ps_atoi(str);
 	if (num > INT_MAX || num < INT_MIN)
-	{
-		write(2, "Error\n", 6);
 		return (-1);
-	}
 	if (check_for_duplicate(*lst, num))
-	{
-		write(2, "Error\n", 6);
 		return (-1);
-	}
 	i = get_i_of_next_num(str);
 	if (i == -1)
-	{
-		write(2, "Error\n", 6);
 		return (-1);
-	}
 	append_list(lst, num);
 	return (i);
 }
 
-t_node	*parse_argv(int argc, char *argv[])
+int	parse_argv(int argc, char *argv[], t_stack *stack)
 {
-	t_node	*head;
 	char	*str;
 	int		i;
 	int		j;
 
 	i = 1;
-	head = NULL;
+	stack->head = NULL;
 	while (i < argc)
 	{
 		str = argv[i];
 		while (*str)
 		{
-			j = parse_str(str, &head);
+			j = parse_str(str, &stack->head);
 			if (j == -1)
-			{
-				clean_list(&head);
-				return (NULL);
-			}
+				return (EXIT_FAILURE);
 			str += j;
 		}
 		i++;
 	}
-	return (head);
+	if (i > 1 && !stack->head)
+		return (EXIT_FAILURE);
+	return (EXIT_SUCCESS);
 }
