@@ -10,10 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/push_swap.h"
+#include "push_swap.h"
 #include <limits.h>
-
-// 4 7 16 20 23 26 31 32 33
 
 static long	ps_atoi(const char *nptr)
 {
