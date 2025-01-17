@@ -61,7 +61,12 @@ char	*read_op(void)
 			return (str);
 		}
 		if (++i > 3)
+		{
+			while (read(0, &str[i], 1)) 
+				if (str[i] == '\n')
+					break;
 			return (NULL);
+		}
 	}
 }
 
