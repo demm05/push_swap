@@ -28,7 +28,7 @@ static void	internal_ra(t_data *data, int print)
 	last->next = first;
 	first->prev = last;
 	if (print && !data->silent)
-		write(1, "ra\n", 3);
+		ft_printf("ra\n");
 }
 
 static void	internal_rb(t_data *data, int print)
@@ -47,7 +47,7 @@ static void	internal_rb(t_data *data, int print)
 	last->next = first;
 	first->prev = last;
 	if (print && !data->silent)
-		write(1, "rb\n", 3);
+		ft_printf("rb\n");
 }
 
 void	ra(t_data *data)
@@ -65,5 +65,5 @@ void	rr(t_data *data)
 	internal_ra(data, 0);
 	internal_rb(data, 0);
 	if (!data->silent)
-		write(1, "rr\n", 3);
+		ft_printf("rr\n");
 }

@@ -31,7 +31,7 @@ static void	internal_sa(t_data *data, int print)
 	second->next = first;
 	first->prev = second;
 	if (!data->silent && print)
-		write(1, "sa\n", 3);
+		ft_printf("sa\n");
 }
 
 static void	internal_sb(t_data *data, int print)
@@ -53,7 +53,7 @@ static void	internal_sb(t_data *data, int print)
 	second->next = first;
 	first->prev = second;
 	if (!data->silent && print)
-		write(1, "sb\n", 3);
+		ft_printf("sb\n");
 }
 
 void	sa(t_data *data)
@@ -71,5 +71,5 @@ void	ss(t_data *data)
 	internal_sa(data, 0);
 	internal_sb(data, 0);
 	if (!data->silent)
-		write(1, "ss\n", 3);
+		ft_printf("ss\n");
 }

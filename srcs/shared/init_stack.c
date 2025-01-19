@@ -53,7 +53,7 @@ t_data	*init_data(int argc, char *argv[])
 	if (!data->a->head || status == EXIT_FAILURE || data->a->size < argc - 1)
 	{
 		if (status == EXIT_FAILURE || data->a->size < argc - 1)
-			write(2, "Error\n", 6);
+			(void)!write(2, "Error\n", 6);
 		free_data(data);
 		return (NULL);
 	}

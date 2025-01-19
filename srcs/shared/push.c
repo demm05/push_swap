@@ -33,7 +33,7 @@ void	pb(t_data *data)
 	data->b->head = temp;
 	data->b->size++;
 	if (!data->silent)
-		write(1, "pb\n", 3);
+		ft_printf("pb\n");
 }
 
 void	pa(t_data *data)
@@ -57,5 +57,5 @@ void	pa(t_data *data)
 	data->a->head = temp;
 	data->a->size++;
 	if (!data->silent)
-		write(1, "pa\n", 3);
+		ft_printf("pa\n");
 }
