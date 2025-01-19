@@ -4,7 +4,7 @@ ODIR				=	objs
 LIB_DIR				=	libft
 
 CC					=	gcc
-CFLAGS				=	-g -Wall -Wextra -Werror -I$(HDIR)
+CFLAGS				=	-Wall -Wextra -Werror -I$(HDIR)
 
 PUSH_SWAP			=	push_swap
 CHECKER				=	checker
