@@ -5,930 +5,6 @@
       "-Wall",
       "-Wextra",
       "-Werror",
-      "-Iinclude/private",
-      "-fvisibility=hidden",
-      "-c",
-      "-o",
-      "objs/ft_parsers.o",
-      "srcs/ft_parsers.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/printf",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/printf/srcs/ft_parsers.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/printf/objs/ft_parsers.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-fvisibility=hidden",
-      "-c",
-      "-o",
-      "objs/ft_printf.o",
-      "srcs/ft_printf.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/printf",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/printf/srcs/ft_printf.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/printf/objs/ft_printf.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-fvisibility=hidden",
-      "-c",
-      "-o",
-      "objs/ft_printf_utils.o",
-      "srcs/ft_printf_utils.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/printf",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/printf/srcs/ft_printf_utils.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/printf/objs/ft_printf_utils.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-fvisibility=hidden",
-      "-c",
-      "-o",
-      "objs/libft.o",
-      "srcs/libft.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/printf",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/printf/srcs/libft.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/printf/objs/libft.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-fvisibility=hidden",
-      "-c",
-      "-o",
-      "objs/parse_specifier.o",
-      "srcs/parse_specifier.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/printf",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/printf/srcs/parse_specifier.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/printf/objs/parse_specifier.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-fvisibility=hidden",
-      "-c",
-      "-o",
-      "objs/pf_char.o",
-      "srcs/pf_char.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/printf",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/printf/srcs/pf_char.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/printf/objs/pf_char.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-fvisibility=hidden",
-      "-c",
-      "-o",
-      "objs/pf_hex.o",
-      "srcs/pf_hex.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/printf",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/printf/srcs/pf_hex.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/printf/objs/pf_hex.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-fvisibility=hidden",
-      "-c",
-      "-o",
-      "objs/pf_integer.o",
-      "srcs/pf_integer.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/printf",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/printf/srcs/pf_integer.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/printf/objs/pf_integer.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-fvisibility=hidden",
-      "-c",
-      "-o",
-      "objs/pf_pointer.o",
-      "srcs/pf_pointer.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/printf",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/printf/srcs/pf_pointer.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/printf/objs/pf_pointer.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-fvisibility=hidden",
-      "-c",
-      "-o",
-      "objs/pf_string.o",
-      "srcs/pf_string.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/printf",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/printf/srcs/pf_string.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/printf/objs/pf_string.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-fvisibility=hidden",
-      "-c",
-      "-o",
-      "objs/pf_unsigned.o",
-      "srcs/pf_unsigned.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/printf",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/printf/srcs/pf_unsigned.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/printf/objs/pf_unsigned.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/conversion/atoi.o",
-      "srcs/conversion/atoi.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/conversion/atoi.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/conversion/atoi.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/conversion/itoa.o",
-      "srcs/conversion/itoa.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/conversion/itoa.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/conversion/itoa.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/conversion/tolower.o",
-      "srcs/conversion/tolower.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/conversion/tolower.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/conversion/tolower.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/conversion/toupper.o",
-      "srcs/conversion/toupper.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/conversion/toupper.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/conversion/toupper.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/list/lstadd_back.o",
-      "srcs/list/lstadd_back.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/list/lstadd_back.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/list/lstadd_back.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/list/lstadd_front.o",
-      "srcs/list/lstadd_front.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/list/lstadd_front.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/list/lstadd_front.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/list/lstclear.o",
-      "srcs/list/lstclear.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/list/lstclear.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/list/lstclear.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/list/lstdelone.o",
-      "srcs/list/lstdelone.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/list/lstdelone.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/list/lstdelone.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/list/lstiter.o",
-      "srcs/list/lstiter.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/list/lstiter.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/list/lstiter.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/list/lstlast.o",
-      "srcs/list/lstlast.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/list/lstlast.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/list/lstlast.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/list/lstmap.o",
-      "srcs/list/lstmap.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/list/lstmap.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/list/lstmap.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/list/lstnew.o",
-      "srcs/list/lstnew.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/list/lstnew.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/list/lstnew.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/list/lstsize.o",
-      "srcs/list/lstsize.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/list/lstsize.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/list/lstsize.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/memory/bzero.o",
-      "srcs/memory/bzero.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/memory/bzero.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/memory/bzero.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/memory/calloc.o",
-      "srcs/memory/calloc.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/memory/calloc.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/memory/calloc.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/memory/memchr.o",
-      "srcs/memory/memchr.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/memory/memchr.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/memory/memchr.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/memory/memcmp.o",
-      "srcs/memory/memcmp.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/memory/memcmp.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/memory/memcmp.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/memory/memcpy.o",
-      "srcs/memory/memcpy.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/memory/memcpy.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/memory/memcpy.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/memory/memmove.o",
-      "srcs/memory/memmove.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/memory/memmove.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/memory/memmove.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/memory/memset.o",
-      "srcs/memory/memset.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/memory/memset.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/memory/memset.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/output/gnl.o",
-      "srcs/output/gnl.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/output/gnl.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/output/gnl.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/output/gnl_utils.o",
-      "srcs/output/gnl_utils.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/output/gnl_utils.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/output/gnl_utils.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/output/putchar_fd.o",
-      "srcs/output/putchar_fd.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/output/putchar_fd.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/output/putchar_fd.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/output/putendl_fd.o",
-      "srcs/output/putendl_fd.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/output/putendl_fd.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/output/putendl_fd.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/output/putnbr_fd.o",
-      "srcs/output/putnbr_fd.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/output/putnbr_fd.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/output/putnbr_fd.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/output/putstr_fd.o",
-      "srcs/output/putstr_fd.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/output/putstr_fd.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/output/putstr_fd.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/isalnum.o",
-      "srcs/string/isalnum.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/isalnum.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/isalnum.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/isalpha.o",
-      "srcs/string/isalpha.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/isalpha.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/isalpha.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/isascii.o",
-      "srcs/string/isascii.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/isascii.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/isascii.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/isdigit.o",
-      "srcs/string/isdigit.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/isdigit.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/isdigit.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/isprint.o",
-      "srcs/string/isprint.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/isprint.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/isprint.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/split.o",
-      "srcs/string/split.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/split.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/split.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strchr.o",
-      "srcs/string/strchr.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strchr.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strchr.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strcmp.o",
-      "srcs/string/strcmp.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strcmp.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strcmp.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strdup.o",
-      "srcs/string/strdup.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strdup.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strdup.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/striteri.o",
-      "srcs/string/striteri.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/striteri.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/striteri.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strjoin.o",
-      "srcs/string/strjoin.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strjoin.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strjoin.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strlcat.o",
-      "srcs/string/strlcat.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strlcat.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strlcat.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strlcpy.o",
-      "srcs/string/strlcpy.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strlcpy.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strlcpy.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strlen.o",
-      "srcs/string/strlen.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strlen.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strlen.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strmapi.o",
-      "srcs/string/strmapi.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strmapi.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strmapi.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strncmp.o",
-      "srcs/string/strncmp.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strncmp.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strncmp.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strnstr.o",
-      "srcs/string/strnstr.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strnstr.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strnstr.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strrchr.o",
-      "srcs/string/strrchr.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strrchr.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strrchr.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/strtrim.o",
-      "srcs/string/strtrim.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/strtrim.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/strtrim.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
-      "-Iinclude/private",
-      "-c",
-      "-o",
-      "objs/string/substr.o",
-      "srcs/string/substr.c"
-    ],
-    "directory": "/home/dmelnyk/Projects/school/push_swap/libft/libft",
-    "file": "/home/dmelnyk/Projects/school/push_swap/libft/libft/srcs/string/substr.c",
-    "output": "/home/dmelnyk/Projects/school/push_swap/libft/libft/objs/string/substr.o"
-  },
-  {
-    "arguments": [
-      "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
-      "-Wall",
-      "-Wextra",
-      "-Werror",
       "-Iinclude",
       "-Ilibft/printf/include",
       "-Ilibft/libft/include",
@@ -944,7 +20,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -963,7 +38,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -982,7 +56,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1001,7 +74,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1020,7 +92,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1039,7 +110,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1058,7 +128,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1077,7 +146,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1096,7 +164,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1115,7 +182,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1134,7 +200,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1153,7 +218,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1172,7 +236,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1191,7 +254,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1210,7 +272,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1229,7 +290,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
@@ -1248,7 +308,6 @@
   {
     "arguments": [
       "/nix/store/xcn9p4xxfbvlkpah7pwchpav4ab9d135-gcc-wrapper-14-20241116/bin/gcc",
-      "-g",
       "-Wall",
       "-Wextra",
       "-Werror",
