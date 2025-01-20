@@ -24,13 +24,13 @@ CFLAGS				+=	-I$(LIBFT_DIR)/include
 VPATH				=	$(SDIR):$(SDIR)/shared:$(SDIR)/push_swap:$(SDIR)/checker:$(HDIR)
 
 PUSH_SWAP_SRCS		:=	$(wildcard $(SDIR)/push_swap/*.c)
-PUSH_SWAP_OBJS		:=	$(patsubst $(SDIR)/push_swap/%.c, $(ODIR)/push_swap/%.o, $(PUSH_SWAP_SRCS))
+PUSH_SWAP_OBJS		:=	$(patsubst $(SDIR)/push_swap/%.c,$(ODIR)/push_swap/%.o, $(PUSH_SWAP_SRCS))
 
 CHECKER_SRCS		:=	$(wildcard $(SDIR)/checker/*.c)
-CHECKER_OBJS		:=	$(patsubst $(SDIR)/checker/%.c, $(ODIR)/checker/%.o, $(CHECKER_SRCS))
+CHECKER_OBJS		:=	$(patsubst $(SDIR)/checker/%.c,$(ODIR)/checker/%.o, $(CHECKER_SRCS))
 
 SHARED_SRCS			:=	$(wildcard $(SDIR)/shared/*.c)
-SHARED_OBJS			:=	$(patsubst $(SDIR)/shared/%.c, $(ODIR)/shared/%.o, $(SHARED_SRCS))
+SHARED_OBJS			:=	$(patsubst $(SDIR)/shared/%.c,$(ODIR)/shared/%.o, $(SHARED_SRCS))
 
 DIRS				=	$(ODIR)/shared $(ODIR)/checker $(ODIR)/push_swap
 
@@ -44,11 +44,13 @@ $(DIRS):
 $(ODIR)/%.o: srcs/%.c | $(DIRS)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-$(PUSH_SWAP): $(SHARED_OBJS) $(PUSH_SWAP_OBJS) $(LIB)
-	$(CC) $(CFLAGS) $^ -o $@
+$(PUSH_SWAP): $(LIB) $(SHARED_OBJS) $(PUSH_SWAP_OBJS)
+	@echo
+	$(CC) $(CFLAGS) $(SHARED_OBJS) $(PUSH_SWAP_OBJS) $(LIB) -o $@
 
-$(CHECKER): $(SHARED_OBJS) $(CHECKER_OBJS) $(LIB)
-	$(CC) $(CFLAGS) $^ -o $@
+$(CHECKER): $(LIB) $(SHARED_OBJS) $(CHECKER_OBJS)
+	@echo
+	$(CC) $(CFLAGS) $(SHARED_OBJS) $(CHECKER_OBJS) $(LIB) -o $@
 
 bonus: $(CHECKER)
 
@@ -76,6 +78,6 @@ clean: lib_clean
 fclean: clean lib_fclean
 	@rm -rf $(PUSH_SWAP) $(CHECKER)
 
-re: lib_re all
+re: fclean $(LIB) all
 
 .PHONY: all lib_fclean lib_clean clean fclean bonus
