@@ -50,7 +50,7 @@ static int	get_i_of_next_num(char	*str)
 			while (str[i] == ' ')
 				i++;
 			if (get_i_of_next_num(str + i) != -1)
-				return (i);
+				return (i + 1);
 			return (-1);
 		}
 		else
