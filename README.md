@@ -43,10 +43,10 @@ This makes the sorting logic much cleaner.
 ### Performance of the Algorithm
 
 #### Sorting 100 Numbers:
-![til](100.gif)
+![til](./assets/100.gif)
 
 #### Sorting 500 Numbers:
-![til](t00.gif)
+![til](./assets/500.gif)
 
 ### Bonus
 
