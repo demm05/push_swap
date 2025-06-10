@@ -1,23 +1,30 @@
 # push_swap
 
-Because swap_push isn't as natural
+The goal of push_swap is simple: sort a list of numbers.
+The catch?
+You can only use two stacks and a very specific, limited set of commands.
+This project challenges you to find the most efficient sorting algorithm within these constraints.
 
-Given a set of integers, sort it using a predefined set of instructions using
-two stacks. The instruction set is defined below. This program outputs a program
-in push_swap instructions that sorts the input integers.
+## The Challenge
 
-## Instruction set
+You are given two stacks, a and b:
+* Stack a starts with a random list of unique integers.
+* Stack b starts empty.
 
-For the following instructions, if the instruction is not possible, the part of
-it that can't be executed won't.
+The goal is to sort the numbers in stack a in ascending order with the fewest possible moves.
+Stack b is used as a temporary holding space to help you sort, but it must be empty by the end.
+
+## The moves
+
+You have a set of 11 operations you can use to manipulate the stacks:
 
 | Code  | Instruction                         | Action                                                 |
 | ----- | ----------------------------------- | ------------------------------------------------------ |
-| `sa`  | swap a                              | swaps the 2 top elements of stack a                    |
-| `sb`  | swap b                              | swaps the 2 top elements of stack b                    |
+| `sa`  | Swap A                              | swaps the 2 top elements of stack a                    |
+| `sb`  | swap B                              | swaps the 2 top elements of stack b                    |
 | `ss`  | swap a + swap b                     | both `sa` and `sb`                                     |
-| `pa`  | push a                              | moves the top element of stack b at the top of stack a |
-| `pb`  | push b                              | moves the top element of stack a at the top of stack b |
+| `pa`  | Push A                              | moves the top element of stack b at the top of stack a |
+| `pb`  | Push B                              | moves the top element of stack a at the top of stack b |
 | `ra`  | rotate a                            | shifts all elements of stack a from bottom to top      |
 | `rb`  | rotate b                            | shifts all elements of stack b from bottom to top      |
 | `rr`  | rotate a + rotate b                 | both `ra` and `rb`                                     |
@@ -27,27 +34,22 @@ it that can't be executed won't.
 
 ## Algorithm
 
-In this project I used `3-Way QuickSort` sort as the main algorithm.
+My solution uses a 3-Way Quicksort algorithm.
 
-### Simplify numbers
-
-Instead of dealing with potentially large or negative integers, we assign each number an index based on its relative size.
-
-   For example, if we have [-5, 100, 2, -10], we'd simplify it to [1, 3, 2, 0].
+To optimize the process, I first simplify the numbers.
+Instead of working with the raw integers (e.g., -5, 100, 2, -10), I replace each one with its sorted index (e.g., 1, 3, 2, 0).
+This makes the sorting logic much cleaner.
 
 ### Performance of the Algorithm
 
-    3 numbers with maximum 3 instructions,
-    4 numbers with maximum 7 instructions,
-    5 numbers with maximum 11 instructions,
-    100 numbers with maximum 1084 instructions => 3 points,
-    500 numbers with maximum 6785 instructions => 4 points.
+#### Sorting 100 Numbers:
+![til](100.gif)
+
+#### Sorting 500 Numbers:
+![til](t00.gif)
 
 ### Bonus
 
-The bonus part is to write a program named checker, which will get as an argument the stack A formatted as a list of integers. Checker will then wait and read instructions on the standard input. Once all the instructions have been read, checker will execute them on the stack received as an argument (After giving the instructions press ctrl + d).
-
-If after executing those instructions, stack a is actually sorted and b is empty, then
-checker must display "OK" else "KO". If checker arguments are invalid it displays Error.
-
-The checker code can be found in the checker.c file in this repository. 
+This project also includes a checker program. You can feed it a list of numbers and a sequence of push_swap instructions.
+* If the instructions successfully sort the list, it will output OK.
+* If the list is not sorted, or an error occurs (e.g., invalid instruction), it will output KO.
